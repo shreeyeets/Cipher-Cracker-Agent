@@ -67,7 +67,7 @@ def decipher_text(ciphertext, key):
 
 # Simulated Annealing for local search optimization
 def simulated_annealing(ciphertext, initial_key):
-    max_iterations=1400
+    max_iterations=14000
     temperature=1.0
     cooling_rate=0.99
     reverse_initial_key = {v: k for k, v in initial_key.items()}  # Reverse mapping of the initial key
@@ -158,7 +158,7 @@ def simulated_annealing_multiple_runs(ciphertext, initial_key, num_runs):
 class DecipherText(object):  # Do not change this
     def decipher(self, ciphertext):  # Do not change this
         """Decipher the given ciphertext"""
-        num_runs = 70
+        num_runs = 100
 
         # Frequency analysis for initial key
         initial_key = frequency_analysis(ciphertext)
